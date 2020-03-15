@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Никита Шорников">
+    <meta name="description" content="Персональна страница ученика Almamat"> 
+    
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    
+    
+    <script src="https://kit.fontawesome.com/4844b3f499.js" crossorigin="anonymous"></script>
+    <!--
+        <i class="fas fa-beer"></i>
+        <i class="fas fa-bong"></i>
+        <i class="fas fa-bolt"></i>
+    -->
+    
+    <title>My personal page</title>
+</head>
+
+<!--Здесь начинается тело сайта (отображаться не будет)-->
+<!--
+    <tag atr1>
+    <tag atr1='zn1 zn2 znx'
+        атрибуты могут быть без кавычек, в одинарных и двойных
+    <tag atr1=... atr2="zn1 zn2 znx" atrx=''>...</tag>
+
+    если нужно включить в текст угловую кавычку, то это будет &lt;h1&gt; например, список спецсимволов
+
+    теги b и strong  - жирный текст, а i и em - курсив
+так же h1...h6 и strong и em важны для поисковых систем, b и i просто для текста
+    теги s делает текст зачеркнутым, а u - подчеркнутым
+-->
+<body> 
+    <h1 id="gotop">Это все-таки моя первая собственная страничка а-ля <i>Работа по HTML</i></h1>
+    <hr>
+    <footer style="text-align:center">
+      <a href="index.html" target="_blank">Пустая страница</a>
+    </footer>
+
+
+    <footer style="text-align:center">
+    <p>Все <b>будет</b> <i>класс</i>!!!</p>
+    <p>Просто <b> <i>побаловаться</i> захотелось</b> </p>
+    <p>Не забывать закрывать парные теги</p>
+    </footer>
+
+    
+    <h2>Пусть этот однажды нарисованный кот будет тут</h2>
+<hr>
+    <p>Задание на добавление img на страничку, well done!</p>
+    <footer style="text-align:center"><img src="images/kot512x512.png" alt="pretty kitty"></footer>
+
+    <hr>
+    <div>
+        
+            <p title="Подсказка">
+                это (div или article) <b>вложенный элемент независимого автономного расположения</b>
+            </p>
+        
+    </div>
+
+    <hr>
+
+    <h3 id="2">Списки</h3>
+<hr>
+    <p>Упорядоченный список с ol <b>(числовой список)</b></p>
+    <!-- 
+        если сделать ol start="5", то пойдет начало с циры 5, если поставить reversed то в обратном исчислении (поддерживается не во всех браузерах)
+    -->
+     <ol type="I">
+        <li>За честь и отвагу</li>
+        <li type="a">За моего отца</li>
+        <li>Нужна древесина</li>
+        <li>Духи не знают усталости</li>
+     </ol>
+
+    <p>Неупорядоченный список с ul <b>маркированный список</b></p>
+     <ul style="list-style-type:square">
+    <!--
+        можно делать просто type(?)
+    -->
+        <li>утро</li>
+        <li>день</li>
+        <li>вечер</li>
+        <li>ночь</li>
+     </ul>
+
+    <p>Список с описанием списка </p>
+     <dl>
+        <dt>Зима</dt>
+          <ol type="1">
+            <li><dd>это когда холодно</dd></li>
+            <li><dd>минус на улице</dd></li>
+          </ol>
+        <dt>Лето</dt>
+          <dd>это когда тепло</dd>
+          <dd>плюс на улице</dd>
+     </dl>
+
+     <p>Вложенный список</p>
+      <ul style="list-style-type:circle">
+        <li>Сигареты
+            <ul style="list-style-type: lower-latin;">
+                <li>Мальборо</li>
+                <li>Camel</li>
+            </ul>
+        
+        <li>Табак</li>
+            <ol type="1">
+                <li>Самокрутки</li>
+                <li>Трубочный</li>
+            </ol>
+        
+        </ul>
+        
+
+    <h4> Ссылки </h4>
+
+    <footer style="text-align:center">
+        <p>
+            <!--внешняя ссылка, ведущая на другой домен, внутренняя, если ведет на тот же сайт -->
+            <a href="https://vk.com/id321087871" title="моя страница">Retro_fox</a>
+             дефолт, откроется в том же окне (можно писать target="_self")
+        </p>
+        <p><a href="https://vk.com/id321087871" target="_blank">моя страница в новом окне</a> (target="_blank")</p>
+        <p><a href="https://vk.com/id321087871" target="_top">в том же окне</a> (target="_top") <b> If your webpage is locked in a frame, you can use target="_top" to break out of the frame</b></p>
+        <p><a href="https://vk.com/id321087871"><img src="images/kot2.jpg" alt="kitty"></a> надо бы уменьшить картинку</p>
+    </footer>
+
+    <h4> <b> Таблицы </b> </h4> 
+
+        <table cellspacing="50">
+            <caption>Рандомная таблица для проверки</caption>
+        
+                <tr>
+                <th><i class="fas fa-bomb"></i></th>
+                <th><i class="fas fa-brain"></i></th>
+                <th><i class="fas fa-burn"></i></th>
+            </tr>
+             <tr>
+                 <th>Первое <i class="fas fa-beer"></i></th>
+                 <th>Второе <i class="fas fa-bolt"></i></th>
+                 <th>Третье <i class="fas fa-bong"></i></th>
+             </tr> 
+        
+
+             <tr>
+                 <td>Самое начало</td>
+                 <td>Продолжение</td>
+                 <td>Окончание</td>
+             </tr>
+            </tr>
+
+             <tr>
+                 <td>Дебют</td>
+                 <td>Миддлшпиль</td>
+                 <td>Эндшпиль</td>
+             </tr>
+        </table>
+
+    <h4> <b> Формы заполнения </b> </h4>
+
+         <form action="mailto:info@almamat.com" method="POST" enctype="text/plain" autocomplete="on">
+
+             <label>Name</label><br>
+             Имя :<input type="text" name="Your name"><br>
+             <p><label>Surname</label><br>          
+             <input type="text" name="Your surname"><br></p>
+             <p><label>email</label><br>
+             <input type="email" name="Your email"><br></p>
+             <p><label>Message</label><br>
+             <textarea rows="4" cols="50" name="Your message"></textarea></p>
+             
+             
+             <input type="submit" value="Отправить"><br>
+             Нажимая кнопку <b>Кнопка</b> Вы отправляете данные на @
+
+             
+         </form>
+         <footer style="text-align:right">
+         <address>SPb 59°57′</address>
+         </footer>
+    
+
+<p><a href="#gotop">On top</a></p>
+<p><a href="#2">middle</a></p>
+<!-- если в <head> прописать <base target="_blank"> например то он будет учитыаться для всех ссылок-якорей и они будут открываться в новом окне
+     если в <head> указать именно основной сайт, то якорь надо будет указывать на xxx.com/нужный якорь
+-->
+</body>
+</html>
